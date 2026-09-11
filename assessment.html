@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduPath - Skill Assessment</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>EduPath</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+
+    <section class="assessment">
+
+        <h1>🎯 Skill Assessment</h1>
+
+        <p>
+            Answer the following questions to understand
+            your IT skills.
+        </p>
+
+
+        <form id="assessmentForm">
+
+            <!-- Question 1 -->
+            <div class="question">
+                <h3>1. How comfortable are you with HTML?</h3>
+
+                <label>
+                    <input type="radio" name="q1" value="3" required>
+                    Very Comfortable
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="2">
+                    Comfortable
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="1">
+                    Beginner
+                </label>
+            </div>
+
+
+            <!-- Question 2 -->
+            <div class="question">
+                <h3>2. How comfortable are you withJavaScript?</h3>
+                <label>
+                    <input type="radio" name="q2" value="3" required>
+                    Very Comfortable
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="2">
+                    Comfortable
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="1">
+                    Beginner
+                </label>
+            </div>
+            <!-- Question 3 -->
+            <div class="question">
+
+                <h3>3. How comfortable are you with Programming?</h3>
+
+                <label>
+                    <input type="radio" name="q3" value="3" required>
+                    Very Comfortable
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="2">
+                    Comfortable
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="1">
+                    Beginner
+                </label>
+
+            </div>
+            <!-- Question 4 -->
+            <div class="question">
+
+                <h3>4. How comfortable are you with Database/SQL?</h3>
+
+                <label>
+                    <input type="radio" name="q4" value="3" required>
+                    Very Comfortable
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="2">
+                    Comfortable
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="1">
+                    Beginner
+                </label>
+
+            </div>
+
+            <button type="submit">Check My Skills</button>
+
+            <div id="assessmentResult"></div>
+            <div id="careerRecommendation"></div>
+            </form>
+        <script src="script.js"></script>
+    </body>
+        

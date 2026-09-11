@@ -1,0 +1,630 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+/* Header */
+header {
+    background: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+header h2 {
+    color: #2563eb;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #eaf2ff;
+}
+
+.hero h1 {
+    font-size: 42px;
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 25px auto;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.hero button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #174bb5;
+}
+
+/* Features */
+.features {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 40px;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.feature-box div {
+    background: white;
+    padding: 30px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.feature-box h3 {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111827;
+    color: white;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+/* Login Page */
+
+.login-container {
+    width: 350px;
+    margin: 80px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.login-container h1 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.login-container h2 {
+    margin-bottom: 25px;
+}
+
+.login-container form {
+    text-align: left;
+}
+
+.login-container label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #174bb5;
+}
+
+.login-container p {
+    margin-top: 20px;
+}
+
+.login-container a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* Dashboard */
+
+.dashboard {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.dashboard h1 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.dashboard>p {
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.dashboard-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card h3 {
+    margin-bottom: 12px;
+}
+
+.dashboard-card p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.dashboard-card button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.dashboard-card button:hover {
+    background: #174bb5;
+}
+
+/* Mobile Dashboard */
+
+@media (max-width: 800px) {
+    .dashboard-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Skill Assessment */
+
+.assessment {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 35px;
+}
+
+.assessment h1 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.assessment>p {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.question {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.question h3 {
+    margin-bottom: 18px;
+}
+
+.question label {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.question label:hover {
+    background: #f0f6ff;
+}
+
+.question input {
+    margin-right: 10px;
+}
+
+.assessment button {
+    display: block;
+    margin: 30px auto;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.assessment button:hover {
+    background: #174bb5;
+}
+
+#assessmentResult {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .dashboard {
+        padding: 35px 20px;
+    }
+
+    .dashboard h1 {
+        font-size: 26px;
+    }
+
+    .dashboard-box {
+        grid-template-columns: 1fr;
+    }
+
+    .assessment {
+        padding: 25px 15px;
+    }
+
+    .assessment h1 {
+        font-size: 28px;
+    }
+
+    .question {
+        padding: 20px;
+    }
+
+    .roadmap {
+        padding: 35px 20px;
+    }
+
+    .materials {
+        padding: 35px 20px;
+    }
+
+    .quiz {
+        padding: 35px 20px;
+    }
+
+    .results {
+        padding: 35px 20px;
+    }
+
+    .profile {
+        padding: 35px 20px;
+    }
+
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+
+    .dashboard-box,
+    .materials-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .dashboard-box,
+    .materials-container {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard,
+    .assessment,
+    .roadmap,
+    .materials,
+    .quiz,
+    .results,
+    .profile {
+        width: auto;
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .dashboard-card,
+    .material-card,
+    .quiz-question,
+    .question,
+    .result-card,
+    .profile-card {
+        width: auto;
+    }
+
+}
+
+/* Home Page Hero */
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Career Cards */
+
+.career-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.career-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.career-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto 0;
+}
+
+.career-card {
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.career-card h3 {
+    margin-bottom: 15px;
+}
+
+.career-card p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.career-card button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Phone */
+
+@media (max-width: 600px) {
+
+    .career-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Career Card Design */
+
+.career-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+}
+
+.career-card h3 {
+    color: #2563eb;
+}
+
+.career-card button {
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+}
+
+.career-card button:hover {
+    background: #174bb5;
+}
+
+/* Feature Card Design */
+
+.feature-box div {
+    transition: transform 0.2s ease;
+}
+
+.feature-box div:hover {
+    transform: translateY(-5px);
+}
+
+.feature-box h3 {
+    color: #2563eb;
+}
+
+/* Footer Design */
+
+footer {
+    margin-top: 40px;
+    padding: 30px 20px;
+    text-align: center;
+    background: #111827;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Why Choose EduPath */
+
+.why-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.why-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.why-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.why-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.why-card h3 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.why-card p {
+    line-height: 1.6;
+}
+
+/* Phone */
+
+@media (max-width: 600px) {
+
+    .why-container {
+        grid-template-columns: 1fr;
+    }
+
+}
