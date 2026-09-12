@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>EduPath - Skill Assessment</title>
+    <title>Education & IT Career Pathway - Skill Assessment</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        <h2>EduPath</h2>
+        <h2>Education & IT Career Pathway</h2>
 
         <nav>
             <a href="index.html">Home</a>
@@ -21,7 +21,6 @@
             <a href="login.html">Logout</a>
         </nav>
     </header>
-
 
     <section class="assessment">
 
@@ -31,7 +30,6 @@
             Answer the following questions to understand
             your IT skills.
         </p>
-
 
         <form id="assessmentForm">
 
@@ -55,10 +53,10 @@
                 </label>
             </div>
 
-
             <!-- Question 2 -->
             <div class="question">
-                <h3>2. How comfortable are you withJavaScript?</h3>
+                <h3>2. How comfortable are you with JavaScript?</h3>
+
                 <label>
                     <input type="radio" name="q2" value="3" required>
                     Very Comfortable
@@ -74,9 +72,9 @@
                     Beginner
                 </label>
             </div>
+
             <!-- Question 3 -->
             <div class="question">
-
                 <h3>3. How comfortable are you with Programming?</h3>
 
                 <label>
@@ -93,11 +91,10 @@
                     <input type="radio" name="q3" value="1">
                     Beginner
                 </label>
-
             </div>
+
             <!-- Question 4 -->
             <div class="question">
-
                 <h3>4. How comfortable are you with Database/SQL?</h3>
 
                 <label>
@@ -114,14 +111,88 @@
                     <input type="radio" name="q4" value="1">
                     Beginner
                 </label>
-
             </div>
 
             <button type="submit">Check My Skills</button>
 
-            <div id="assessmentResult"></div>
-            <div id="careerRecommendation"></div>
-            </form>
-        <script src="script.js"></script>
-    </body>
-        
+        </form>
+
+        <!-- Result -->
+        <div id="assessmentResult"></div>
+
+        <div id="careerRecommendation"></div>
+
+    </section>
+
+    <footer>
+        <p>
+            © 2026 Education & IT Career Pathway |
+            Student Learning & IT Career Guidance System
+        </p>
+    </footer>
+
+
+    <script>
+
+        document.getElementById("assessmentForm").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            let score = 0;
+
+            // Get selected answers
+            score += Number(document.querySelector('input[name="q1"]:checked').value);
+            score += Number(document.querySelector('input[name="q2"]:checked').value);
+            score += Number(document.querySelector('input[name="q3"]:checked').value);
+            score += Number(document.querySelector('input[name="q4"]:checked').value);
+
+
+            let level = "";
+            let recommendation = "";
+
+
+            // Skill level
+            if (score >= 10) {
+
+                level = "Advanced 🚀";
+
+                recommendation =
+                    "You have strong IT skills. Web Development, Full Stack Development and Software Development can be good career paths for you.";
+
+            } 
+            else if (score >= 7) {
+
+                level = "Intermediate 💪";
+
+                recommendation =
+                    "You have a good foundation. Continue improving HTML, CSS, JavaScript, Programming and SQL.";
+
+            } 
+            else {
+
+                level = "Beginner 🌱";
+
+                recommendation =
+                    "Start with HTML, CSS, JavaScript and basic Programming. Practice regularly and build small projects.";
+
+            }
+
+
+            // Show result
+            document.getElementById("assessmentResult").innerHTML =
+                "<h2>📊 Your Assessment Result</h2>" +
+                "<p><strong>Total Score:</strong> " + score + " / 12</p>" +
+                "<p><strong>Skill Level:</strong> " + level + "</p>";
+
+
+            document.getElementById("careerRecommendation").innerHTML =
+                "<h2>💼 Career Recommendation</h2>" +
+                "<p>" + recommendation + "</p>";
+
+        });
+
+    </script>
+
+</body>
+
+</html>

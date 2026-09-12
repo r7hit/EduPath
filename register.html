@@ -2,49 +2,147 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>EduPath - Register</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Education & IT Career Pathway - Register
+    </title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
+
+    <!-- Registration Container -->
+
     <div class="login-container">
 
-        <h1>EduPath</h1>
-        <h2>Student Registration</h2>
+
+        <!-- Website Brand -->
+
+        <h1>
+            Education & IT Career Pathway
+        </h1>
+
+
+        <h2>
+            Student Registration
+        </h2>
+
+
+        <p>
+            Create your account and start your
+            learning journey with us.
+        </p>
+
+
+        <!-- Registration Form -->
 
         <form id="registerForm">
 
-            <label>Full Name</label>
-            <input type="text" id="name" placeholder="Enter your name" required>
 
-            <label>Email</label>
-            <input type="email" id="registerEmail" placeholder="Enter your email" required>
+            <!-- Full Name -->
 
-            <label>Password</label>
-            <input type="password" id="registerPassword" placeholder="Create password" required>
+            <label for="name">
+                Full Name
+            </label>
 
-            <label>Confirm Password</label>
-            <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                required>
 
-            <button type="submit">Create Account</button>
+
+            <!-- Email -->
+
+            <label for="registerEmail">
+                Email Address
+            </label>
+
+            <input
+                type="email"
+                id="registerEmail"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required>
+
+
+            <!-- Password -->
+
+            <label for="registerPassword">
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="registerPassword"
+                placeholder="Create a password"
+                autocomplete="new-password"
+                minlength="6"
+                required>
+
+
+            <!-- Confirm Password -->
+
+            <label for="confirmPassword">
+                Confirm Password
+            </label>
+
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm your password"
+                autocomplete="new-password"
+                minlength="6"
+                required>
+
+
+            <!-- Create Account Button -->
+
+            <button type="submit">
+                Create Account 🚀
+            </button>
+
 
         </form>
 
+
+        <!-- Login Link -->
+
         <p>
+
             Already have an account?
-            <a href="login.html">Login</a>
+
+            <a href="login.html">
+                Login
+            </a>
+
         </p>
 
-        <a href="index.html">← Back to Home</a>
+
+        <!-- Home Link -->
+
+        <a href="index.html">
+            ← Back to Home
+        </a>
+
 
     </div>
 
+
+    <!-- JavaScript -->
+
     <script src="script.js"></script>
+
 
 </body>
 

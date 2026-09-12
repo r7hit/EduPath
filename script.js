@@ -1,274 +1,314 @@
-// Start Journey Button
+/* =========================================
+   EDUPATH - MAIN JAVASCRIPT
+   Education & IT Career Pathway
+========================================= */
+
+
+/* =========================================
+   START JOURNEY
+========================================= */
 
 const startButton = document.querySelector(".hero button");
 
 if (startButton) {
+
     startButton.addEventListener("click", function () {
-        alert("Welcome to EduPath! Your learning journey starts here.");
+
+        alert(
+            "Welcome to Education & IT Career Pathway! 🚀\n\n" +
+            "Your learning journey starts now."
+        );
+
+        window.location.href = "assessment.html";
+
     });
+
 }
 
 
-// Skill Assessment
+/* =========================================
+   SKILL ASSESSMENT
+========================================= */
 
-const assessmentForm = document.getElementById("assessmentForm");
+const assessmentForm =
+    document.getElementById("assessmentForm");
 
 if (assessmentForm) {
 
-    assessmentForm.addEventListener("submit", function (event) {
+    assessmentForm.addEventListener(
+        "submit",
+        function (event) {
 
-        event.preventDefault();
+            event.preventDefault();
 
-        let score = 0;
+            let score = 0;
 
-        const questions = ["q1", "q2", "q3", "q4"];
+            const questions = [
+                "q1",
+                "q2",
+                "q3",
+                "q4"
+            ];
 
-        questions.forEach(function (question) {
+            questions.forEach(function (question) {
 
-            const selected = document.querySelector(
-                'input[name="' + question + '"]:checked'
-            );
+                const selected =
+                    document.querySelector(
+                        'input[name="' +
+                        question +
+                        '"]:checked'
+                    );
 
-            if (selected) {
-                score += Number(selected.value);
+                if (selected) {
+
+                    score += Number(
+                        selected.value
+                    );
+
+                }
+
+            });
+
+
+            /* Score Result */
+
+            let result = "";
+
+            if (score >= 10) {
+
+                result =
+                    "🌟 Excellent! You have strong IT skills.";
+
             }
 
-        });
+            else if (score >= 7) {
 
-        let result;
+                result =
+                    "👍 Good! You have a solid foundation in IT.";
 
-        if (score >= 10) {
-            result = "🌟 Excellent! You have strong IT skills.";
+            }
+
+            else {
+
+                result =
+                    "📚 Keep Learning! Strengthen your IT fundamentals.";
+
+            }
+
+
+            const assessmentResult =
+                document.getElementById(
+                    "assessmentResult"
+                );
+
+            if (assessmentResult) {
+
+                assessmentResult.innerHTML =
+                    "🎯 Your Skill Score: " +
+                    score +
+                    " / 12<br><br>" +
+                    result;
+
+            }
+
+
+            /* Career Recommendation */
+
+            let career = "";
+
+            if (score >= 10) {
+
+                career =
+                    "💻 Recommended Career: Web Developer";
+
+            }
+
+            else if (score >= 7) {
+
+                career =
+                    "☕ Recommended Career: Java Developer";
+
+            }
+
+            else {
+
+                career =
+                    "📚 Recommended Path: IT Beginner";
+
+            }
+
+
+            const careerRecommendation =
+                document.getElementById(
+                    "careerRecommendation"
+                );
+
+            if (careerRecommendation) {
+
+                careerRecommendation.innerHTML =
+                    "<br>" + career;
+
+            }
+
+
+            /* Save Assessment */
+
+            localStorage.setItem(
+                "assessmentScore",
+                score
+            );
+
+            localStorage.setItem(
+                "recommendedCareer",
+                career
+            );
+
         }
-        else if (score >= 7) {
-            result = "👍 Good! You have a good foundation in IT.";
-        }
-        else {
-            result = "📚 Keep Learning! You should improve your IT skills.";
-        }
-
-        document.getElementById("assessmentResult").innerHTML =
-            "Your Skill Score: " + score + " / 12<br><br>" + result;
-
-        let career = "";
-
-        if (score >= 10) {
-            career = "💻 Recommended Career: Web Developer";
-        }
-        else if (score >= 7) {
-            career = "☕ Recommended Career: Java Developer";
-        }
-        else {
-            career = "📚 Recommended Path: IT Beginner";
-        }
-
-        document.getElementById("careerRecommendation").innerHTML =
-            "<br>" + career;
-
-    });
+    );
 
 }
 
-// Quiz System
 
-const quizForm = document.getElementById("quizForm");
+/* =========================================
+   QUIZ SYSTEM
+========================================= */
+
+const quizForm =
+    document.getElementById("quizForm");
 
 if (quizForm) {
 
-    quizForm.addEventListener("submit", function (event) {
+    quizForm.addEventListener(
+        "submit",
+        function (event) {
 
-        event.preventDefault();
+            event.preventDefault();
 
-        let score = 0;
+            let score = 0;
 
-        const questions = ["q1", "q2", "q3", "q4"];
+            const questions = [
+                "q1",
+                "q2",
+                "q3",
+                "q4"
+            ];
 
-        questions.forEach(function (question) {
 
-            const selected = document.querySelector(
-                'input[name="' + question + '"]:checked'
+            questions.forEach(function (question) {
+
+                const selected =
+                    quizForm.querySelector(
+                        'input[name="' +
+                        question +
+                        '"]:checked'
+                    );
+
+                if (selected) {
+
+                    score += Number(
+                        selected.value
+                    );
+
+                }
+
+            });
+
+
+            /* Save Score */
+
+            localStorage.setItem(
+                "quizScore",
+                score
             );
 
-            if (selected) {
-                score += Number(selected.value);
+
+            /* Display Score */
+
+            const quizResult =
+                document.getElementById(
+                    "quizResult"
+                );
+
+            if (quizResult) {
+
+                let message = "";
+
+                if (score === 4) {
+
+                    message =
+                        "🏆 Perfect Score! Excellent work!";
+
+                }
+
+                else if (score >= 3) {
+
+                    message =
+                        "🌟 Great job! Your IT fundamentals are strong.";
+
+                }
+
+                else if (score >= 2) {
+
+                    message =
+                        "👍 Good effort! Keep practicing.";
+
+                }
+
+                else {
+
+                    message =
+                        "📚 Keep learning and try the quiz again.";
+
+                }
+
+
+                quizResult.innerHTML =
+                    "🎯 Your Quiz Score: " +
+                    score +
+                    " / 4" +
+                    "<br><br>" +
+                    message;
+
             }
 
-        });
+        }
+    );
 
-        document.getElementById("quizResult").innerHTML =
-            "🎯 Your Quiz Score: " + score + " / 4";
-
-        localStotage.setItem("quizScore", score);
-
-    });
 }
-// Show saved quiz score on Results page
 
-const savedScore = document.getElementById("savedScore");
+
+/* =========================================
+   SHOW SAVED QUIZ RESULT
+========================================= */
+
+const savedScore =
+    document.getElementById("savedScore");
 
 if (savedScore) {
 
-    const score = localStorage.getItem("quizScore");
+    const score =
+        localStorage.getItem("quizScore");
+
 
     if (score !== null) {
 
-        savedScore.innerHTML = score + " / 4";
+        savedScore.textContent =
+            score + " / 4";
 
-        document.getElementById("performanceMessage").innerHTML =
-            "🎉 Great! Keep improving your IT knowledge.";
 
-    }
-}
-// Login System
+        const performanceMessage =
+            document.getElementById(
+                "performanceMessage"
+            );
 
-// const loginForm = document.getElementById("loginForm");
 
-// if (loginForm) {
+        if (performanceMessage) {
 
-//     loginForm.addEventListener("submit", function (event) {
+            if (Number(score) === 4) {
 
-//         event.preventDefault();
+                performanceMessage.textContent =
+                    "🏆 Excellent! Perfect score!";
 
-//         const email = document.getElementById("email").value;
-//         const password = document.getElementById("password").value;
+            }
 
-//         if (email && password) {
-
-//             alert("Login Successful! 🎉");
-
-//             window.location.href = "dashboard.html";
-
-//         }
-
-//     });
-// }
-
-// Login System
-
-const loginForm = document.getElementById("loginForm");
-
-if (loginForm) {
-
-    loginForm.addEventListener("submit", function (event) {
-
-        event.preventDefault();
-
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
-
-        const savedEmail = localStorage.getItem("studentEmail");
-        const savedPassword = localStorage.getItem("studentPassword");
-
-        if (email === savedEmail && password === savedPassword) {
-
-            alert("Login Successful! 🎉");
-
-            window.location.href = "dashboard.html";
-
-        } else {
-
-            alert("Invalid Email or Password ❌");
-
-        }
-
-    });
-}
-
-// Register System
-
-const registerForm = document.getElementById("registerForm");
-
-if (registerForm) {
-
-    registerForm.addEventListener("submit", function (event) {
-
-        event.preventDefault();
-
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("registerEmail").value;
-        const password = document.getElementById("registerPassword").value;
-        const confirmPassword = document.getElementById("confirmPassword").value;
-
-        if (password !== confirmPassword) {
-            alert("Passwords do not match!");
-            return;
-        }
-
-        localStorage.setItem("studentName", name);
-        localStorage.setItem("studentEmail", email);
-        localStorage.setItem("studentPassword", password);
-
-        alert("Account Created Successfully! 🎉");
-
-        window.location.href = "login.html";
-    });
-}
-// Show Student Name on Dashboard
-
-const studentName = document.getElementById("studentName");
-
-if (studentName) {
-
-    const savedName = localStorage.getItem("studentName");
-
-    if (savedName) {
-        studentName.textContent = savedName;
-    }
-
-}
-
-// Show Student Information on Profile
-
-const profileName = document.getElementById("profileName");
-const profileEmail = document.getElementById("profileEmail");
-
-if (profileName) {
-
-    const savedName = localStorage.getItem("studentName");
-    const savedEmail = localStorage.getItem("studentEmail");
-
-    if (savedName) {
-        profileName.textContent = savedName;
-    }
-
-    if (savedEmail) {
-        profileEmail.textContent = savedEmail;
-    }
-
-}
-
-// Logout System
-
-const logoutLink = document.getElementById("logoutLink");
-
-if (logoutLink) {
-
-    logoutLink.addEventListener("click", function (event) {
-
-        event.preventDefault();
-
-        localStorage.removeItem("studentName");
-        localStorage.removeItem("studentEmail");
-        localStorage.removeItem("studentPassword");
-
-        alert("Logged out successfully! 👋");
-
-        window.location.href = "login.html";
-
-    });
-
-}
-
-const logoutLink = document.getElementById("logoutLink");
-
-if (logoutLink) {
-    logoutLink.addEventListener("click", function () {
-
-        localStorage.removeItem("studentName");
-        localStorage.removeItem("studentEmail");
-        localStorage.removeItem("studentPassword");
-
-        window.location.href = "login.html";
-
-    });
-}
+            else if (

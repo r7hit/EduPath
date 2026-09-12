@@ -2,129 +2,461 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>EduPath - IT Quiz</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Education & IT Career Pathway - IT Quiz</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-    <header>
-        <h2>EduPath</h2>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="assessment.html">Assessment</a>
-            <a href="roadmap.html">Roadmap</a>
-            <a href="materials.html">Materials</a>
-        </nav>
-    </header>
+<!-- ================= HEADER ================= -->
 
+<header>
 
-    <section class="quiz">
+    <div class="brand">
 
-        <h1>📝 IT Knowledge Quiz</h1>
+        <h2>Education & IT Career Pathway</h2>
 
-        <p>Test your basic IT knowledge.</p>
+        <span>Student Learning Platform</span>
+
+    </div>
 
 
-        <form id="quizForm">
+    <nav>
 
-            <div class="quiz-question">
-                <h3>1. What does HTML stand for?</h3>
+        <a href="index.html">Home</a>
 
-                <label>
-                    <input type="radio" name="q1" value="1" required>
-                    Hyper Text Markup Language
-                </label>
+        <a href="dashboard.html">Dashboard</a>
 
-                <label>
-                    <input type="radio" name="q1" value="0">
-                    High Text Machine Language
-                </label>
+        <a href="assessment.html">Assessment</a>
 
-                <label>
-                    <input type="radio" name="q1" value="0">
-                    Hyperlink Text Management Language
-                </label>
+        <a href="roadmap.html">Roadmap</a>
+
+        <a href="materials.html">Materials</a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= QUIZ HERO ================= -->
+
+<section class="quiz-hero">
+
+    <div class="quiz-hero-content">
+
+        <span class="quiz-badge">
+            🧠 KNOWLEDGE CHECK
+        </span>
+
+        <h1>
+            Test Your IT Knowledge
+        </h1>
+
+        <p>
+            Challenge yourself with this beginner-friendly
+            IT quiz and check your understanding of web
+            development, programming and databases.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= QUIZ INFORMATION ================= -->
+
+<section class="quiz-info">
+
+    <div class="quiz-info-card">
+
+        <div class="quiz-info-icon">
+            📝
+        </div>
+
+        <div>
+
+            <h3>4 Questions</h3>
+
+            <p>
+                Test your basic IT concepts.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="quiz-info-card">
+
+        <div class="quiz-info-icon">
+            🎯
+        </div>
+
+        <div>
+
+            <h3>4 Marks</h3>
+
+            <p>
+                Each correct answer gives 1 mark.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="quiz-info-card">
+
+        <div class="quiz-info-icon">
+            🚀
+        </div>
+
+        <div>
+
+            <h3>Improve Your Skills</h3>
+
+            <p>
+                Use your result to identify areas to improve.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= QUIZ ================= -->
+
+<section class="quiz">
+
+
+    <div class="quiz-heading">
+
+        <span>
+            IT FUNDAMENTALS
+        </span>
+
+        <h2>
+            Let's Begin the Quiz
+        </h2>
+
+        <p>
+            Select the correct answer for every question
+            and submit the quiz to see your score.
+        </p>
+
+    </div>
+
+
+
+    <form id="quizForm">
+
+
+        <!-- QUESTION 1 -->
+
+        <div class="quiz-question">
+
+            <div class="question-number">
+                Question 01
             </div>
 
+            <h3>
+                What does HTML stand for?
+            </h3>
 
-            <div class="quiz-question">
-                <h3>2. Which language is used to style a website?</h3>
+            <label>
 
-                <label>
-                    <input type="radio" name="q2" value="1" required>
-                    CSS
-                </label>
+                <input
+                    type="radio"
+                    name="q1"
+                    value="1"
+                    required>
 
-                <label>
-                    <input type="radio" name="q2" value="0">
-                    SQL
-                </label>
+                Hyper Text Markup Language
 
-                <label>
-                    <input type="radio" name="q2" value="0">
-                    Java
-                </label>
+            </label>
+
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="q1"
+                    value="0">
+
+                High Text Machine Language
+
+            </label>
+
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="q1"
+                    value="0">
+
+                Hyperlink Text Management Language
+
+            </label>
+
+        </div>
+
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="quiz-question">
+
+            <div class="question-number">
+                Question 02
             </div>
 
+            <h3>
+                Which language is mainly used to style
+                the appearance of a website?
+            </h3>
 
-            <div class="quiz-question">
-                <h3>3. Which language makes websites interactive?</h3>
 
-                <label>
-                    <input type="radio" name="q3" value="1" required>
-                    JavaScript
-                </label>
+            <label>
 
-                <label>
-                    <input type="radio" name="q3" value="0">
-                    HTML
-                </label>
+                <input
+                    type="radio"
+                    name="q2"
+                    value="1"
+                    required>
 
-                <label>
-                    <input type="radio" name="q3" value="0">
-                    SQL
-                </label>
+                CSS
+
+            </label>
+
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="q2"
+                    value="0">
+
+                SQL
+
+            </label>
+
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="q2"
+                    value="0">
+
+                Java
+
+            </label>
+
+        </div>
+
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="quiz-question">
+
+            <div class="question-number">
+                Question 03
             </div>
 
+            <h3>
+                Which language is commonly used to make
+                web pages interactive?
+            </h3>
 
-            <div class="quiz-question">
-                <h3>4. Which language is commonly used for database queries?</h3>
 
-                <label>
-                    <input type="radio" name="q4" value="1" required>
-                    SQL
-                </label>
+            <label>
 
-                <label>
-                    <input type="radio" name="q4" value="0">
-                    CSS
-                </label>
+                <input
+                    type="radio"
+                    name="q3"
+                    value="1"
+                    required>
 
-                <label>
-                    <input type="radio" name="q4" value="0">
-                    HTML
-                </label>
+                JavaScript
+
+            </label>
+
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="q3"
+                    value="0">
+
+                HTML
+
+            </label>
+
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="q3"
+                    value="0">
+
+                SQL
+
+            </label>
+
+        </div>
+
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="quiz-question">
+
+            <div class="question-number">
+                Question 04
             </div>
 
-
-            <button type="submit">Check Quiz Score</button>
-
-        </form>
-
-
-        <div id="quizResult"></div>
-
-    </section>
+            <h3>
+                Which language is commonly used to
+                communicate with relational databases?
+            </h3>
 
 
-    <script src="script.js"></script>
+            <label>
+
+                <input
+                    type="radio"
+                    name="q4"
+                    value="1"
+                    required>
+
+                SQL
+
+            </label>
+
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="q4"
+                    value="0">
+
+                CSS
+
+            </label>
+
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="q4"
+                    value="0">
+
+                HTML
+
+            </label>
+
+        </div>
+
+
+
+        <!-- SUBMIT -->
+
+        <button
+            type="submit"
+            class="quiz-submit">
+
+            Check My Score 🚀
+
+        </button>
+
+
+    </form>
+
+
+
+    <!-- RESULT -->
+
+    <div
+        id="quizResult"
+        class="quiz-result">
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= LEARNING TIP ================= -->
+
+<section class="quiz-tip">
+
+    <div class="quiz-tip-box">
+
+        <div class="quiz-tip-icon">
+            💡
+        </div>
+
+        <div>
+
+            <h3>
+                Learning Tip
+            </h3>
+
+            <p>
+                Don't worry if you don't get every answer
+                correct. Use the quiz as a learning tool,
+                review the topics you found difficult and
+                try again after improving your knowledge.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 Education & IT Career Pathway
+    </p>
+
+    <p>
+        Learn • Practice • Build • Grow 🚀
+    </p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
 
 </body>
+
 </html>

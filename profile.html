@@ -2,62 +2,562 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>EduPath - My Profile</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Education & IT Career Pathway - My Profile
+    </title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-    <header>
-        <h2>EduPath</h2>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="materials.html">Courses</a>
-            <a href="roadmap.html">Career</a>
-        </nav>
-    </header>
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="brand">
+
+        <h2>Educational & IT Career Pathway </h2>
+
+        <span>
+        
+        </span>
+
+    </div>
 
 
-    <section class="profile">
+    <nav>
 
-        <h1>👤 My Profile</h1>
+        <a href="index.html">
+            Home
+        </a>
 
-        <div class="profile-card">
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="materials.html">
+            Courses
+        </a>
+
+        <a href="roadmap.html">
+            Career
+        </a>
+
+        <a href="assessment.html">
+            Assessment
+        </a>
+
+        <a href="quiz.html">
+            Quiz
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= PROFILE PAGE ================= -->
+
+<section class="profile">
+
+
+    <!-- Profile Introduction -->
+
+    <div class="profile-intro">
+
+        <span class="profile-badge">
+            👤 STUDENT PROFILE
+        </span>
+
+        <h1>
+            My Learning Profile
+        </h1>
+
+        <p>
+            Welcome to your personal learning space.
+            Track your learning goals, explore your
+            career interests, review your skills and
+            continue building your IT knowledge with
+            Education & IT Career Pathway.
+        </p>
+
+    </div>
+
+
+
+    <!-- ================= MAIN PROFILE CARD ================= -->
+
+    <div class="profile-card">
+
+
+        <!-- Profile Header -->
+
+        <div class="profile-header">
 
             <div class="profile-icon">
                 🎓
             </div>
 
-            <h2>Student Profile</h2>
+            <div>
 
-            <p><strong>Name:</strong> <span id="profileName">Student</span></p>
+                <h2 id="profileName">
+                    Student
+                </h2>
 
-            <p><strong>Email:</strong> <span id=profileEmail>Student@edupath.com</span></p>
+                <p class="profile-role">
+                    EduPath Student
+                </p>
 
-            <p><strong>Email:</strong> student@edupath.com</p>
+                <span class="active-status">
+                    ● Active Learner
+                </span>
 
-            <p><strong>Learning Goal:</strong> IT Development</p>
+            </div>
 
-            <p><strong>Career Interest:</strong> Web Development</p>
+        </div>
+
+
+
+        <!-- ================= PERSONAL INFORMATION ================= -->
+
+        <div class="profile-section">
+
+            <h3>
+                👤 Personal Information
+            </h3>
+
+            <div class="profile-grid">
+
+
+                <div class="profile-info-box">
+
+                    <span>
+                        Full Name
+                    </span>
+
+                    <strong id="profileNameInfo">
+                        Student
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-info-box">
+
+                    <span>
+                        Email Address
+                    </span>
+
+                    <strong id="profileEmail">
+                        student@edupath.com
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-info-box">
+
+                    <span>
+                        Student Status
+                    </span>
+
+                    <strong>
+                        Active Student
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-info-box">
+
+                    <span>
+                        Learning Platform
+                    </span>
+
+                    <strong>
+                        EduPath
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= LEARNING INFORMATION ================= -->
+
+        <div class="profile-section">
+
+            <h3>
+                📚 Learning Information
+            </h3>
+
+            <div class="profile-grid">
+
+
+                <div class="profile-info-box">
+
+                    <span>
+                        Learning Goal
+                    </span>
+
+                    <strong>
+                        IT Development
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-info-box">
+
+                    <span>
+                        Career Interest
+                    </span>
+
+                    <strong>
+                        Web Development
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-info-box">
+
+                    <span>
+                        Learning Level
+                    </span>
+
+                    <strong>
+                        Beginner
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-info-box">
+
+                    <span>
+                        Current Focus
+                    </span>
+
+                    <strong>
+                        Programming & Web
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <div class="profile-section">
+
+            <h3>
+                💻 Technical Skills
+            </h3>
+
+            <p class="section-description">
+
+                Technologies and programming skills
+                that you can learn and develop through
+                your IT career journey.
+
+            </p>
+
+
+            <div class="skill-tags">
+
+                <span>
+                    HTML
+                </span>
+
+                <span>
+                    CSS
+                </span>
+
+                <span>
+                    JavaScript
+                </span>
+
+                <span>
+                    Java
+                </span>
+
+                <span>
+                    SQL
+                </span>
+
+                <span>
+                    C Programming
+                </span>
+
+                <span>
+                    Data Structures
+                </span>
+
+                <span>
+                    Git & GitHub
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= CAREER GOAL ================= -->
+
+        <div class="career-profile-box">
+
+            <div class="career-profile-icon">
+                🚀
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Career Goal
+                </h3>
+
+                <p>
+                    Build strong programming fundamentals,
+                    improve problem-solving abilities,
+                    create practical projects and develop
+                    job-ready technical skills for a successful
+                    career in the IT industry.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= LEARNING JOURNEY ================= -->
+
+        <div class="profile-section">
+
+            <h3>
+                🛣️ My Learning Journey
+            </h3>
+
+
+            <div class="journey-list">
+
+
+                <div class="journey-item">
+
+                    <div class="journey-number">
+                        01
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Learn Fundamentals
+                        </h4>
+
+                        <p>
+                            Understand programming,
+                            web development and
+                            computer fundamentals.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="journey-item">
+
+                    <div class="journey-number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Practice Skills
+                        </h4>
+
+                        <p>
+                            Solve problems, practice
+                            coding and test your
+                            technical knowledge.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="journey-item">
+
+                    <div class="journey-number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Build Projects
+                        </h4>
+
+                        <p>
+                            Create real-world projects
+                            and develop a strong portfolio.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="journey-item">
+
+                    <div class="journey-number">
+                        04
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Prepare for Career
+                        </h4>
+
+                        <p>
+                            Improve interview skills,
+                            prepare for jobs and
+                            become industry ready.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= QUICK ACTIONS ================= -->
+
+        <div class="profile-section">
+
+            <h3>
+                ⚡ Quick Actions
+            </h3>
+
+
+            <div class="profile-actions">
+
+
+                <a href="assessment.html">
+
+                    <button>
+                        🎯 Skill Assessment
+                    </button>
+
+                </a>
+
+
+                <a href="quiz.html">
+
+                    <button>
+                        📝 Take Quiz
+                    </button>
+
+                </a>
+
+
+                <a href="roadmap.html">
+
+                    <button>
+                        🛣️ Career Roadmap
+                    </button>
+
+                </a>
+
+
+                <a href="materials.html">
+
+                    <button>
+                        📚 Study Materials
+                    </button>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= BACK BUTTON ================= -->
+
+        <div class="profile-bottom">
 
             <a href="dashboard.html">
-                <button>Back to Dashboard</button>
+
+                <button>
+                    ← Back to Dashboard
+                </button>
+
             </a>
 
         </div>
 
-    </section>
+
+    </div>
+
+</section>
 
 
-    <footer>
-        <p>© 2026 EduPath | Student Learning & IT Career Guidance System</p>
-    </footer>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 Education & IT Career Pathway
+    </p>
+
+    <p>
+        Learn • Practice • Build • Grow 🚀
+    </p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
