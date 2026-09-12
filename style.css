@@ -3117,3 +3117,31 @@ footer p {
         text-align: center;
     }
 }
+
+/* Mobile Responsive Home Page */
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: auto;
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .hero button {
+        margin-top: 15px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+}
